@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><---!Responsiveness--->
+    <title>Academic Programs - University of Lahore</title>
+	<style>
+	* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+	
+/* nav Styling */	
+}
+	nav {
+    background-color: #0059b3;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+	color:grey;
+}
+/* Header Styling */
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+			box-shadow: 0 4px 8px rgba(1,2,3,4);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+
+main{
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+main h2 {
+    color:green;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main p {
+    text-align: center;
+    margin-bottom: 40px;
+    color:grey;
+	font-family:ariel;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.program {
+    background-color: #e6f2ff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+	font-family:ariel;
+	box-shadow: 0 7px 10px grey;
+	}
+
+.program h3 {
+    margin-bottom: 10px;
+    color: #0059b3;
+}
+
+.program p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Footer Styling */
+        footer {
+            background-color: #0056b3; /* Blue background */
+            color: white;
+            padding: 5px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 2px solid #fff; /* White top border */
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+            min-width: 200px;
+        }
+        
+        .footer-section h3 {
+            border-bottom: 2px solid white; 
+			padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .footer-section ul li a:hover {
+            color: #ffcc00; /* Change color on hover */
+            text-decoration: underline;
+        }
+        
+        .social-icons a {
+            margin-right: 10px;
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+}
+         .social-icons a:hover {
+            color:grey;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            border-top: 1px solid white;
+            padding-top: 10px;
+        }
+   
+
+</style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+     <div class="header-container">
+            <h1>University of Lahore</h1>
+            <p>Shaping the Future with Excellence in Education</p>
+        </div>   
+    </header>
+
+    <!-- Navigation Bar -->
+       <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+           <li><a href="academics.html">Academics</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main>
+        <section id="academics">
+            <h2>Academic Programs</h2>
+            <p>The University of Lahore offers a wide range of undergraduate, graduate, and doctoral programs. Explore the academic paths below to find the one that best fits your future goals.</p>
+
+            <div class="programs-grid">
+                <div class="program">
+                    <h3>Computer Science</h3>
+                    <p>BS, MS, PhD</p>
+                    <p>Cutting-edge education in software development, AI, and data science.</p>
+                </div>
+                <div class="program">
+                    <h3>Business Administration</h3>
+                    <p>BBA, MBA, PhD</p>
+                    <p>Develop leadership skills and business acumen for a global market.</p>
+                </div>
+                <div class="program">
+                    <h3>Electrical Engineering</h3>
+                    <p>BE, MS, PhD</p>
+                    <p>Innovative programs in energy, electronics, and communication systems.</p>
+                </div>
+                <div class="program">
+                    <h3>Medicine</h3>
+                    <p>MBBS, MD</p>
+                    <p>Comprehensive medical education and research for future healthcare professionals.</p>
+                </div>
+                <div class="program">
+                    <h3>Architecture</h3>
+                    <p>B.Arch, M.Arch</p>
+                    <p>Creative and sustainable design solutions for the built environment.</p>
+                </div>
+                <div class="program">
+                    <h3>Law</h3>
+                    <p>LLB, LLM</p>
+                    <p>Prepare for a career in legal practice with strong ethical foundations.</p>
+                </div>
+				<div class="program">
+                    <h3>doctor of Pharmacy</h3>
+                    <p>D-Pharm</p>
+                    <p>D-Pharm degree opens career opportunities as a pharmicist in hospitals,retail pharmacies and pharmaceautical companies.</p>
+                </div>
+				<div class="program">
+                    <h3>doctor of physical theraphy</h3>
+                    <p>DPT</p>
+                    <p> A Doctor of Physical Therapy (DPT) degree leads to careers as a licensed physical therapist, helping patients recover mobility and manage pain.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+       <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Academics Section -->
+            <div class="footer-section">
+                <h3>Academic Resources</h3>
+                <ul>
+                    <li><a href="#library">Library</a></li>
+                    <li><a href="#research">Research Centers</a></li>
+                    <li><a href="#faculty">Faculty Directory</a></li>
+                    <li><a href="#calendar">Academic Calendar</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#scholarships">Scholarships</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#events">Events</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+             <li>Email: academics@uol.edu.pk</li>
+                    <li>Phone: +92 42 111-865-865</li>
+                    <li>Address: 1-KM Defence Road, Lahore</li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                 <a href="https://www.facebook.com/Dept.SE.UOL/">Facebook</a>
+                    <a href="https://ucmd.uol.edu.pk/academics/"">Twitter</a>
+                   <a href="https://www.instagram.com/explore/locations/240142461/university-of-lahore/">Instagram</a>
+                    <a href="https://pk.linkedin.com/school/university-of-lahore/">LinkedIn</a>   
+                  
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            &copy; 2024 University of Lahore. All rights reserved.
+        </div>
+    </footer>
+
+
+</body>
+</html>

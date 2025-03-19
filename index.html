@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset ="UTF-8">
+<meta name="viewport" content ="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!-- SEO Meta Tags -->
+<meta name="description" content="University of Lahore ,offering a wide range of graduate and ungraduate programs across various deisciplane .">
+<meta name="keywords" content="HTML, CSS, JavaScript, web development, your keywords here">
+<meta name="author" content="Maham">
+<!-- Robots Meta Tags -->
+<meta name="robots" content="index, follow"> <!-- Allows search engine indexing -->
+<meta name="googlebot" content="index, follow">
+
+<title>index</title>
+<style>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* nav Styling */
+nav {
+    background-color: #0059b3;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+/* Header Styling */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(1, 2, 3, 4);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+/* Container for the images */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.image-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Animation 1: Rotation effect */
+#img1 {
+    transition: transform 0.5s ease-in-out;
+}
+
+#img1:hover {
+    transform: rotate(360deg);
+}
+
+/* Animation 2: Slide-in from the left */
+#img2 {
+    position: relative;
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animation 3: Scale effect */
+#img3 {
+    transition: transform 0.5s ease-in-out;
+}
+
+#img3:hover {
+    transform: scale(1.1);
+}
+
+/* Subtle fade-in animation for all images */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.image-container {
+    animation: fadeIn 1.5s ease-in-out;
+}
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+    margin: 10px;
+}
+.hero .secondary-btn {
+    background: transparent;
+    border: 2px solid white;
+}
+
+.hero .btn:hover {
+    background: #cc5200;
+}
+/* Programs Section */
+.programs {
+    background: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+	font-family:ariel;
+}
+
+.programs h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.program-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+	margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 200px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.card p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.card a {
+    color: #004080;
+    text-decoration: none;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* News & Events */
+.news-events {
+    background: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.news-events h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #0056b3;
+    color: white;
+    padding: 5px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 5px;
+    min-width: 100px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: grey;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    
+    
+        <div class="header-container">
+            <h1>University of Lahore</h1>
+            <p>Shaping the Future with Excellence in Education</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <br><br>
+
+    <!-- Image Container with Animations -->
+    <div class="image-container">
+        <img id="img1" src="university.jpeg" alt="A university">
+        <img id="img2" src="uoll.jpeg" alt="UOLL campus">
+        <img id="img3" src="uol.jpeg" alt="UOL building">
+    </div>
+	   <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+           
+           
+           
+        </div>
+    </section>
+
+    <!-- Programs Overview -->
+    <section class="programs">
+        <h2>Our Programs</h2>
+        <div class="program-cards">
+            <div class="card">
+                <h3>Engineering</h3>
+                <p>Engineering is a diverse and dynamic field that applies scientific and mathematical principles
+				to solve practical problems, design systems, and create innovative solutions for society. Here are
+				some key points about engineering.It inludes Civil engineering,Mechanical engineering,Computer engineering etc.</p>
+                
+            </div>
+            <div class="card">
+                <h3>Medical fields</h3>
+                <p>Preparing the next generation of healthcare leaders.The medical field is a broad and diverse area
+				that focuses on maintaining health, diagnosing diseases, treating patients, and improving overall quality 
+				of life. It encompasses a wide range of professions, specialties, and subfields, each contributing to different
+                aspects of healthcare.</p>
+                
+            </div>
+            <div class="card">
+                <h3>Business</h3>
+                <p>Shaping the business leaders of the future.The business field is essential for driving economic growth,
+				innovation, and job creation. Business professionals play a vital role in shaping markets, delivering products
+				and services, and responding to changing consumer needs.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Testimonials -->
+    <section class="testimonials">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial">
+            <p>"The University of Lahore has given me the opportunity to grow both academically and socially. The faculty is excellent!"</p>
+            <span>- Ali Ahmed, Engineering</span>
+        </div>
+        <div class="testimonial">
+            <p>"I love the campus life here, and the facilities are top-notch. I am proud to be a part of this university."</p>
+            <span>- Maria Khan, Business</span>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>University of Lahore</h3>
+                <p>
+                    Providing world-class education and research facilities since 1999. 
+                    Our mission is to empower the future generations with knowledge and skills.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#programs">Academic Programs</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+					</ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@uol.edu.pk</li>
+                    <li>Phone: +92 300 1234567</li>
+                    <li>Address: 1-KM Defence Road, Lahore</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Dept.SE.UOL/">Facebook</a>
+                    <a href="https://ucmd.uol.edu.pk/academics/">Twitter</a>
+                    <a href="https://www.instagram.com/explore/locations/240142461/university-of-lahore/">Instagram</a>
+                    <a href="https://pk.linkedin.com/school/university-of-lahore/">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2024 University of Lahore. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
